@@ -1,3 +1,5 @@
+EyeCareAI Project👁️:
+
 EyeCareAI is designed to be simple and accessible for both developers and non-technical users. Here’s a clear breakdown of the main features and what they do:
 
 🔐 User Authentication (Login & Registration)
