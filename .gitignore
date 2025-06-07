@@ -1,0 +1,64 @@
+# Python specific files and virtual environments
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# IDE specific files (adjust if you use a different IDE beyond VS Code)
+.idea/                 # IntelliJ IDEA / PyCharm
+.vscode/               # VS Code specific settings
+*.sublime-workspace    # Sublime Text workspace
+*.iml                  # IntelliJ IDEA module files
+
+# --- Data files and folders (CRITICAL for your 6GB dataset) ---
+# This line will ignore your entire 'data' folder and all its contents,
+# including test, train, val, flagged, inference_images, and the models subfolder within it.
+data/
+
+# Common large data file extensions to ignore (good practice)
+*.csv
+*.tsv
+*.pkl                  # Python pickle files (often large models or processed data)
+*.h5                   # HDF5 files (common for large datasets or Keras models)
+*.hdf5
+*.bin
+*.npy                  # NumPy array files
+*.npz                  # NumPy compressed array files
+*.parquet
+*.feather
+*.sqlite
+*.db
+*.jsonl
+*.zip
+*.tar.gz
+*.gz
+*.rar
+*.7z
+
+# Models and checkpoints (if stored elsewhere or if you only want code)
+# If your primary models are inside the 'data/models/' folder,
+# the 'data/' rule above already covers them.
+# Only add these if you have other 'models/' or 'checkpoints/' folders *outside* of 'data/'.
+# models/
+# checkpoints/
+*.pth                  # PyTorch model files
+*.pt
+*.onnx
+*.pb                   # TensorFlow protobuf files
+*.tf                   # TensorFlow SavedModel directories
+
+# Logs and output files
+logs/
+runs/                  # Often used by TensorBoard
+output/
+results/
+*.log
+*.out
+
+# Operating System generated files
+.DS_Store              # macOS specific
+Thumbs.db              # Windows specific thumbnail database
